@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nieuwjaarsquiz 2024</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Nieuwjaarsquiz 2024</h1>
+    </header>
+    <main class="quiz-layout">
+      <section class="numbers-column">
+        <h2>Top 10</h2>
+        <ul id="top-10-list">
+          <li id="item-1">1. ...</li>
+          <li id="item-2">2. ...</li>
+          <li id="item-3">3. ...</li>
+          <li id="item-4">4. ...</li>
+          <li id="item-5">5. ...</li>
+          <li id="item-6">6. ...</li>
+          <li id="item-7">7. ...</li>
+          <li id="item-8">8. ...</li>
+          <li id="item-9">9. ...</li>
+          <li id="item-10">10. ...</li>
+        </ul>
+      </section>
+      <section class="game-column">
+        <h2 id="topic-title">Kies een onderwerp</h2>
+        <select id="topic-selector" onchange="changeTopic()">
+          <option value="" disabled selected>Selecteer een onderwerp</option>
+          <option value="films">Top 10 Films</option>
+          <option value="liedjes">Top 10 Liedjes</option>
+          <option value="steden">Top 10 Steden</option>
+        </select>
+        <input type="text" id="guess-input" placeholder="Jouw gok hier">
+        <button id="check-button" onclick="checkGuess()">Controleer</button>
+        <div id="feedback" class="feedback"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; Succes dikke dapen!</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
