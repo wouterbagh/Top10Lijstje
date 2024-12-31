@@ -1,7 +1,9 @@
 const topics = {
-  films: ["Inception", "Titanic", "Avatar", "The Godfather", "Pulp Fiction", "The Dark Knight", "Forrest Gump", "The Matrix", "Interstellar", "Gladiator"],
-  liedjes: ["Imagine", "Hey Jude", "Bohemian Rhapsody", "Billie Jean", "Stairway to Heaven", "Let It Be", "Hotel California", "Smells Like Teen Spirit", "Like a Rolling Stone", "Wonderwall"],
-  steden: ["New York", "London", "Paris", "Tokyo", "Dubai", "Singapore", "Los Angeles", "Rome", "Barcelona", "Sydney"]
+  Artiesten: ["Taylor Swift", "Ronnie Flex", "Frenna", "Billie Eilish", "David Guetta", "Drake", "The Weeknd", "Roxy Dekker", "Lijpe", "Kanye West"],
+  Steden: ["Amstedam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"],
+  Pornhub: ["Milf", "Lesbian", "Turkish", "Big ass", "Dutch", "Hentai", "Anal", "Asian", "Massage", "Gangbang"],
+  Songfestival: ["Joost Klein", "Mia & Dion", "S10", "Jeangu Macrooy", "Duncan Laurence", "Waylon", "OG3NE", "Douwe Bob", "Trijntje Oosterhuis", "The Common Linnets"],
+  Google: ["EK", "Joost Klein", "Olympische Spelen", "Liam Payne", "Temu", "Iphone 16", "Ali B", "Dick Schoof", "Sifan Hassan", "Europese verkiezingen"],
 };
 
 let currentTopic = [];
