@@ -1,6 +1,6 @@
 const topics = {
   Artiesten: ["Taylor Swift", "Ronnie Flex", "Frenna", "Billie Eilish", "David Guetta", "Drake", "The Weeknd", "Roxy Dekker", "Lijpe", "Kanye West"],
-  Steden: ["Amstedam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"],
+  Steden: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"],
   Pornhub: ["Milf", "Lesbian", "Turkish", "Big ass", "Dutch", "Hentai", "Anal", "Asian", "Massage", "Gangbang"],
   Songfestival: ["Joost Klein", "Mia & Dion", "S10", "Jeangu Macrooy", "Duncan Laurence", "Waylon", "OG3NE", "Douwe Bob", "Trijntje Oosterhuis", "The Common Linnets"],
   Google: ["EK", "Joost Klein", "Olympische Spelen", "Liam Payne", "Temu", "Iphone 16", "Ali B", "Dick Schoof", "Sifan Hassan", "Europese verkiezingen"],
