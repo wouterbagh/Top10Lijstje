@@ -51,7 +51,13 @@ function checkGuess() {
     return;
   }
 
-  const index = currentTopic.findIndex(item => item.toLowerCase() === guess.toLowerCase());
+  // Zoek de index, maar negeer tekst tussen haakjes in de lijst
+const index = currentTopic.findIndex(item => {
+  // Verwijder alles tussen haakjes en extra spaties aan het einde
+  const cleanItem = item.replace(/\s*\(.*?\)\s*/g, "").trim();
+  
+  return cleanItem.toLowerCase() === guess.toLowerCase();
+});
   if (index !== -1) {
     feedbackElement.innerText = `"${currentTopic[index]}" is juist!`;
     feedbackElement.className = "feedback correct";
