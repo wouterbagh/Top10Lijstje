@@ -1,9 +1,9 @@
 const topics = {
-  Artiesten: ["Taylor Swift", "Ronnie Flex", "Frenna", "Billie Eilish", "David Guetta", "Drake", "The Weeknd", "Roxy Dekker", "Lijpe", "Kanye West"],
-  Steden: ["Amsterdam", "Rotterdam", "Den Haag", "Utrecht", "Eindhoven", "Groningen", "Tilburg", "Almere", "Breda", "Nijmegen"],
-  Pornhub: ["Milf", "Lesbian", "Turkish", "Big ass", "Dutch", "Hentai", "Anal", "Asian", "Massage", "Gangbang"],
-  Songfestival: ["Joost Klein", "Mia & Dion", "S10", "Jeangu Macrooy", "Duncan Laurence", "Waylon", "OG3NE", "Douwe Bob", "Trijntje Oosterhuis", "The Common Linnets"],
-  Google: ["EK", "Joost Klein", "Olympische Spelen", "Liam Payne", "Temu", "Iphone 16", "Ali B", "Dick Schoof", "Sifan Hassan", "Europese verkiezingen"],
+  Muziek: ["Ordinary", "Echte Liefde Is Te Koop", "ZAAZAA", "Messy", "Lotje", "Beetje Van Mij", "Die With A Smile", "Ga Dan!", "Atlas", "Terug In De Tijd"],
+  Bedrijven: ["ASML", "Prosus", "Airbus", "ING Groep", "NXP Semiconductors", "Adyen", "Universal Music Group", "Agrenx", "Heineken", "Ahold Delhaize"],
+  Achternamen: ["De Jong", "De Vries", "Jansen", "Van de/den/der Berg", "Bakker", "Van Dijk", "Visser", "Janssen", "Smit", "Meijer"],
+  Eilanden: ["Groenland", "Nieuw Guinea", "Borneo (Indonesië)", "Madagascar", "Baffin (Canada)", "Sumatra (Indonesië)", "Groot Brittanië", "Honshu (Japan)", "Victoria-eiland (Canada)", "Ellesmere (Canada)"],
+  Attracties: ["Efteling", "Zaanse Schans", "Rijksmuseum Amsterdam", "Van Gogh Museum", "De Uithof", "Safaripark Beekse Bergen", "Diergaarde Blijdorp", "Keukenhof", "Duinrell", "Artis"],
 };
 
 let currentTopic = [];
