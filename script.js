@@ -87,6 +87,34 @@ function checkGuess() {
   guessInput.focus();
 }
 
+function showAll() {
+  const feedbackElement = document.getElementById("feedback");
+
+  if (!currentTopic.length) {
+    feedbackElement.innerText = "Kies eerst een onderwerp!";
+    feedbackElement.className = "feedback incorrect";
+    return;
+  }
+
+  currentTopic.forEach((item, index) => {
+    const listItem = document.getElementById(`item-${index + 1}`);
+    if (!listItem) return;
+
+    listItem.innerText = `${index + 1}. ${item}`;
+    listItem.style.opacity = "1";
+
+    // Optioneel: markeer items die nog niet geraden waren
+    if (!guessedItems.includes(item)) {
+      listItem.style.fontStyle = "italic";
+      listItem.style.background = "lightgray";
+      listItem.style.color = "black";
+    }
+  });
+
+  feedbackElement.innerText = "Alle antwoorden zijn nu zichtbaar.";
+  feedbackElement.className = "feedback correct";
+}
+
 function animateListItem(element) {
   element.style.animation = 'none';
   element.offsetHeight; 
@@ -100,25 +128,54 @@ document.getElementById("guess-input").addEventListener("keyup", function(event)
 });
 
 function createFireworks() {
-  const colors = ['#FF0000', '#00FF00', '#0000FF', '#FF00FF', '#FFFF00', '#00FFFF', '#FFD700'];
-  const fireworksContainer = document.createElement('div');
-  
-  for (let i = 1; i <= 15; i++) {
-    const firework = document.createElement('div');
-    firework.className = 'firework';
-    firework.style.left = Math.random() * 100 + 'vw';
-    firework.style.top = Math.random() * 100 + 'vh';
-    firework.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
-    firework.style.position = 'fixed';
-    firework.style.width = '5px';
-    firework.style.height = '5px';
-    firework.style.borderRadius = '50%';
-    firework.style.pointerEvents = 'none';
-    fireworksContainer.appendChild(firework);
+  const colors = ['#ff0043', '#14fc56', '#1e90ff', '#ffae00', '#ff00ff', '#00ffff'];
+  const burstCount = 3; // aantal explosies
+
+  for (let b = 0; b < burstCount; b++) {
+    setTimeout(() => {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight * 0.6;
+
+      for (let i = 0; i < 30; i++) {
+        const particle = document.createElement('div');
+        particle.className = 'firework-particle';
+        particle.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+        particle.style.left = x + 'px';
+        particle.style.top = y + 'px';
+
+        const angle = Math.random() * Math.PI * 2;
+        const speed = Math.random() * 6 + 4;
+
+        particle.vx = Math.cos(angle) * speed;
+        particle.vy = Math.sin(angle) * speed;
+
+        document.body.appendChild(particle);
+
+        animateParticle(particle);
+      }
+    }, b * 300);
   }
-  
-  document.body.appendChild(fireworksContainer);
-  setTimeout(() => fireworksContainer.remove(), 2000);
+}
+
+function animateParticle(particle) {
+  let opacity = 1;
+  let gravity = 0.15;
+
+  function frame() {
+    particle.vy += gravity;
+    particle.style.left = particle.offsetLeft + particle.vx + 'px';
+    particle.style.top = particle.offsetTop + particle.vy + 'px';
+    opacity -= 0.02;
+    particle.style.opacity = opacity;
+
+    if (opacity > 0) {
+      requestAnimationFrame(frame);
+    } else {
+      particle.remove();
+    }
+  }
+
+  requestAnimationFrame(frame);
 }
 
 window.onload = changeTopic;
