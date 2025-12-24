@@ -3,7 +3,7 @@ const topics = {
   Bedrijven: ["ASML", "Prosus", "Airbus", "ING Groep", "NXP Semiconductors", "Adyen", "Universal Music Group", "Agrenx", "Heineken", "Ahold Delhaize"],
   Achternamen: ["De Jong", "De Vries", "Jansen", "Van de/den/der Berg", "Bakker", "Van Dijk", "Visser", "Janssen", "Smit", "Meijer"],
   Eilanden: ["Groenland", "Nieuw Guinea", "Borneo (Indonesië)", "Madagascar", "Baffin (Canada)", "Sumatra (Indonesië)", "Groot Brittanië", "Honshu (Japan)", "Victoria-eiland (Canada)", "Ellesmere (Canada)"],
-  Attracties: ["Efteling", "Zaanse Schans", "Rijksmuseum Amsterdam", "Van Gogh Museum", "De Uithof", "Safaripark Beekse Bergen", "Diergaarde Blijdorp", "Keukenhof", "Duinrell", "Artis"],
+  Attracties: ["Efteling (5.600.000)", "Zaanse Schans (2.608.313)", "Rijksmuseum Amsterdam (2.500.000)", "Van Gogh Museum (1.842.627)", "De Uithof (1.582.665)", "Safaripark Beekse Bergen (1.559.311)", "Diergaarde Blijdorp (1.412.295)", "Keukenhof (1.400.000)", "Duinrell (1.381.407)", "Artis (	1.272.515)"],
 };
 
 let currentTopic = [];
